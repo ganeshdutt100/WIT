@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        /* nav {} */
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            border-radius: 20px;
+            margin-top: 20px;
+
+
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+            font-size: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar ul li a:hover {
+            color: yellow;
+        }
+
+        /* section1 */
+
+        .section1 {
+            display: flex;
+            padding: 20px 20px 30px 40px;
+        }
+
+        .section1Image {
+            width: 500px;
+            height: 500px;
+            border-radius: 30px;
+        }
+
+        .section1Text {
+            margin-top: 105px;
+            line-height: 1.5;
+        }
+
+        button {
+            background: black;
+            color: yellow;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background: yellow;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+        <ul class="navbarList">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+
+        </ul>
+        <!-- <button class="navbarButton">Sign Up</button> -->
+    </nav>
+
+    <!-- .section1 -->
+    <div class="section1">
+        <div class="section1Text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sed aperiam consectetur pariatur
+                deserunt, vero esse adipisci enim vel similique doloribus quibusdam atque recusandae temporibus earum
+                veritatis nemo. Natus, accusantium.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facilis fugit voluptas cumque enim.
+                Delectus itaque voluptatibus nisi tempore sequi. Ipsa voluptates deserunt eveniet quam consequuntur
+                dolorem amet expedita iste?</p>
+            <div class="btn">
+                <button>Click me </button>
+                <button>Click me </button>
+            </div>
+        </div>
+
+        <img class="section1Image"
+            src="https://img.freepik.com/free-photo/close-up-man-writing-code-laptop_158595-5169.jpg?ga=GA1.1.671956177.1737693396&semt=ais_hybrid"
+            alt="">
+    </div>
+</body>
+
+</html>
