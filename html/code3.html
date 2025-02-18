@@ -12,6 +12,7 @@
         th {
             border: 1px solid black;
             padding: 8px;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -19,49 +20,59 @@
 <body>
     <table border="1">
 
-        <tr>
-            <th>Heading 1</th>
-            <th>Heading 2</th>
-            <th>Heading 3</th>
-            <th>Heading 4</th>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-            <td>Data 4</td>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-            <td>Data 4</td>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-            <td>Data 4</td>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-            <td>Data 4</td>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-            <td>Data 4</td>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-            <td>Data 4</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+                <th>Heading 3</th>
+                <th>Heading 4</th>
+            </tr>
+        </thead>
 
+        <tbody>
+
+
+            <tr>
+                <td rowspan="3">Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <!-- <td>Data 1</td> -->
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <!-- <td>Data 1</td> -->
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </tbody>
+
+        <tfoot style="background-color: lightslategray;">
+
+
+            <tr>
+                <td colspan="3">Data </td>
+
+                <td>Data 4</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
