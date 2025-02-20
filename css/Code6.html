@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            border-radius: 30px;
+            margin-top: 10px;
+            width: 91%;
+            margin-left: 20px;
+            /* margin-left: 10px;
+            margin-right: 10px; */
+        }
+
+        .logo {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+
+
+        }
+
+        ul li:hover {
+            color: yellow;
+            cursor: pointer;
+        }
+
+        /* section1 */
+
+        .section1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50vh;
+            background-color: #f1f1f1;
+            padding: 30px;
+        }
+
+        .sec1Text h1 {
+            margin: 10px 0;
+        }
+
+        .sec1Text p {
+            margin: 10px 0;
+            line-height: 1.3;
+        }
+
+        .sec1Image img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: 1px solid #333;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            border: 1px solid #333;
+            background-color: white;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+
+    <!-- section1 -->
+    <div class="section1">
+        <div class="sec1Text">
+            <h1>Lorem ipsum dolor </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quod praesentium quisquam eligendi
+                labore, obcaecati dolores. Harum quae ut expedita sapiente totam atque laudantium. Labore repellendus
+                quibusdam sequi aperiam delectus!</p>
+
+            <button>Click me </button>
+        </div>
+        <div class="sec1Image">
+            <img src="https://img.freepik.com/free-vector/website-development-banner_33099-1687.jpg?uid=R168473893&ga=GA1.1.671956177.1737693396&semt=ais_hybrid"
+                alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
