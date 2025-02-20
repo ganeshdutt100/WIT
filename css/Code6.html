@@ -29,7 +29,7 @@
             font-weight: bold;
         }
 
-        ul {
+        nav ul {
             list-style-type: none;
             display: flex;
             gap: 20px;
@@ -37,7 +37,7 @@
 
         }
 
-        ul li:hover {
+        nav ul li:hover {
             color: yellow;
             cursor: pointer;
         }
@@ -82,6 +82,78 @@
             background-color: white;
             color: #333;
         }
+
+        /* section2 */
+        .sec2 {
+            margin-top: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .empty {
+            width: 300px;
+            height: 4px;
+            background-color: black;
+            margin: auto;
+            border-radius: 50%;
+
+        }
+
+        .sec2Cards {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+            align-items: center;
+
+        }
+
+        .card1 {
+            width: 300px;
+            background-color: lightblue;
+            padding-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .card1 img {
+            width: 100%;
+        }
+
+
+        /* section3 */
+        .sec3 {}
+
+        form {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightcyan;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        input {
+            border: none;
+            background-color: lightskyblue;
+            padding: 5px 15px;
+            border-radius: 10px;
+            outline: none;
+            /* color: white; */
+        }
+
+
+        /* footer */
+        footer {
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content: space-around;
+            gap: 50px;
+            padding: 20px;
+        }
     </style>
 </head>
 
@@ -111,6 +183,79 @@
             <img src="https://img.freepik.com/free-vector/website-development-banner_33099-1687.jpg?uid=R168473893&ga=GA1.1.671956177.1737693396&semt=ais_hybrid"
                 alt="">
         </div>
+    </div>
+
+
+    <!-- .section2 -->
+    <div class="sec2">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <div class="empty"></div>
+        <div class="sec2Cards">
+
+            <div class="card1">
+                <img src="https://img.freepik.com/free-vector/web-development-illustration_33099-1934.jpg?uid=R168473893&ga=GA1.1.671956177.1737693396&semt=ais_hybrid"
+                    alt="">
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, ipsum eget consectetur
+                    consectetur, metus neque sollicitudin ex, a mattis lectus lacus et velit.</p>
+                <!-- <button>Click me </button> -->
+            </div>
+            <div class="card1">
+                <img src="https://img.freepik.com/free-vector/web-development-illustration_33099-1934.jpg?uid=R168473893&ga=GA1.1.671956177.1737693396&semt=ais_hybrid"
+                    alt="">
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, ipsum eget consectetur
+                    consectetur, metus neque sollicitudin ex, a mattis lectus lacus et velit.</p>
+                <!-- <button>Click me </button> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- .section3 -->
+
+    <div class="sec3">
+        <h1 style="text-align: center;">Lorem ipsum dolor sit amet.</h1>
+        <div class="empty"></div>
+        <form style="margin-top: 30px;">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <button>Submit</button>
+        </form>
+    </div>
+
+
+    <!-- sec4 -->
+    <div class="sec4">
+        <footer>
+            <div class="textFooter">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, odit soluta possimus porro ipsam minus
+                    totam, blanditiis modi ipsa sed illum sapiente nesciunt voluptate amet dolore tempora quaerat
+                    cupiditate nostrum!</p>
+            </div>
+            <div class="LinkFooter">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>contact</li>
+                    <li>services</li>
+                    <li>home</li>
+                </ul>
+            </div>
+            <div class="projectFooter">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>contact</li>
+                    <li>services</li>
+                    <li>home</li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
 </body>
