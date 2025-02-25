@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- cdnjs link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        ul {
+            display: none;
+            gap: 20px;
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        @media only screen and (min-width: 700px) {
+            ul {
+                display: flex;
+            }
+
+            .iconsBar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">logo</div>
+        <ul>
+            <li> Home</li>
+            <li> About</li>
+            <li> Contact</li>
+            <li> Services</li>
+            <li> Project</li>
+        </ul>
+
+        <i class="fa-solid fa-bars-staggered iconsBar"></i>
+    </nav>
+</body>
+
+</html>
