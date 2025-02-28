@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* using phone size */
+        .sec1 {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .image img {
+            width: 300px;
+            height: auto;
+        }
+
+        /* using laptop size */
+
+        @media only screen and (min-width: 500px) {
+            .sec1 {
+                flex-direction: row;
+
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            .sec1 {
+                flex-direction: column;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sec1">
+        <div class="text">
+            <h1>Hello, World!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptas atque. Possimus repellat
+                necessitatibus, alias quos cumque iure ipsum voluptates, sit aut laudantium laborum temporibus nostrum
+                odio nesciunt eligendi dolorem..</p>
+            <a href="#">Click here</a>
+        </div>
+        <div class="image">
+            <img src="https://img.freepik.com/free-photo/programmer-working-computer_1098-18697.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
