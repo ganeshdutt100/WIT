@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+            text-align: center;
+            /* margin-top: 100px; */
+            background-color: lightblue;
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+
+
+        }
+
+        input {
+            border: none;
+            padding: 10px;
+            width: 200px;
+            margin-bottom: 10px;
+            border-radius: 40px;
+            outline: none;
+        }
+
+        button {
+            border: none;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border-radius: 40px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <input type="number" placeholder="Enter your first number" id="firstNumber"> <br> <br>
+
+        <input type="text" placeholder="Enter your OP number" id="OP"> <br> <br>
+
+        <input type="number" placeholder="Enter your Second number" id="secondNumber"> <br> <br>
+
+        <p>loading...</p>
+
+        <button onclick="fun()">Submit</button>
+    </div>
+
+
+    <script>
+        // let a = Number(prompt("Enter your first number  "))
+
+
+        // let op = prompt("Enter your op , + , - , * ,/ ")
+
+        // let b = Number(prompt("Enter your second number "))
+
+
+        function fun() {
+
+            let a = document.querySelector("#firstNumber").value;
+            let op = document.querySelector("#OP").value;
+            let b = document.querySelector("#secondNumber").value;
+            // let Num1 = Number(a)
+            let output;
+
+            switch (op) {
+                case "+":
+                    output = Number(a) + Number(b);
+                    // console.log(a + b);
+
+                    break;
+                case "-":
+                    output = a - b;
+                    break;
+                case "*":
+                    output = a * b;
+                    break;
+                case "/":
+                    output = a / b;
+                    break;
+                default:
+                    output = ("Invalid operator");
+                    break;
+
+
+
+            }
+
+            document.querySelector("p").innerHTML = output;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
