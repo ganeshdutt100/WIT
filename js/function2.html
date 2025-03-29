@@ -11,6 +11,11 @@
     <p class="para">Lorem ipsum dolor sit amet.</p>
     <button onclick="fun()">Click me </button>
     <script>
+        function fun() {
+            let arrayName = ["value1", "value2", "value3"]
+            let value = arrayName[Math.floor(Math.random() * 3)]
+            document.querySelector(".para").innerHTML = value
+        }
 
         // function fun() {
         //     let para = document.querySelector(".para");
@@ -58,17 +63,18 @@
         // document.writeln(fun(12, 56));
 
 
-        function fun(q, e) {
-            return q + e
-        }
-        document.writeln(fun(12, 45));
+        // function fun(q, e) {
+        //     return q + e
+        // }
+        // document.writeln(fun(12, 45));
 
-        let arrowFunction = (a, b) => { return a + b }
-        document.writeln(arrowFunction(89, 45));
+        // let arrowFunction = (a, b) => { return a + b }
+        // document.writeln(arrowFunction(89, 45));
 
 
 
     </script>
+    <!-- <button></button> -->
 </body>
 
 </html>
