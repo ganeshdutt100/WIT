@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>DOM Example</title>
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="demo">Click the button to change this text.</p>
+    <button onclick="changeText()">Click me</button>
+    <script>
+        function changeText() {
+            var paragraph = document.getElementById("demo");
+
+            paragraph.textContent = "Hello, world!";
+
+            paragraph.classList.add("highlight");
+        }
+    </script>
+</body>
+
+</html>

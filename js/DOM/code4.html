@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Button Game</title>
+    <style>
+        #moveButton {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="moveButton">Move Me!</button>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            var moveButton = document.getElementById("moveButton");
+            moveButton.addEventListener("click", function () {
+                // Get window dimensions
+                var windowWidth = window.innerWidth;
+                var windowHeight = window.innerHeight;
+                // Calculate random position
+                var randomX = Math.floor(Math.random() * (windowWidth - 100)); //
+                // Subtract button width
+                var randomY = Math.floor(Math.random() * (windowHeight - 50)); //
+                // Subtract button height
+                // Set button position
+                moveButton.style.left = randomX + "px";
+                moveButton.style.top = randomY + "px";
+            });
+        });
+    </script>
+</body>
+
+</html>
