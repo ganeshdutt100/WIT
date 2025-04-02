@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let a = [12, 34, 94, 5, 3, 3, 3, 2, 34, 65]
+
+        // for (let x of a.entries()) {
+        //     console.log(x);
+
+        // }
+        // console.log(a.entries());
+
+
+
+        let a = [1, 2, 3, 4, 5, 6, 7]
+
+        // let sum = 0;
+        // for (let x of a) {
+        //     sum = sum + x
+        // }
+
+        // console.log(sum);
+
+
+
+
+        let output = a.reduce((a, b) => a + b)
+
+        console.log(output);
+        // let output = a.some(x => x % 2 == 0)
+        // let output = a.filter(x => x % 2 == 0)
+        // let output = a.find(x => x % 2 == 0)
+        // let output = a.findIndex(x => x % 2 == 0)
+        // let output = a.map(x => x * 2)
+        // a.forEach(x => console.log(x));
+
+
+
+        // console.log(output);
+
+
+        let arrayLike = {
+            length: 5,
+            0: 'apple',
+            1: 'banana',
+            2: 'orange'
+        };
+        let newArray = Array.from(arrayLike);
+        console.log(newArray);
+
+
+
+    </script>
+</body>
+
+</html>
